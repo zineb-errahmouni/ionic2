@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar class="homePage">
+    <button ion-button menuToggle>
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+    <ion-title>Swipe Test</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="homePage"  >
+
+
+<div class="content" on-tap="playOrStop()"  (onSwipeUp)="onSwipeUp($event)" swipe-listener  (onSwipeLeft)="onSwipeLeft($event)" (onSwipeDown)="onSwipeDown($event)" 
+(onSwipeRight)="onswipeRight($event)"
+>
+    <span class="swipe col col-center text-center" >
+      {{swipeType}}
+    </span>
+</div>
+
+<ion-footer>
+  <ion-toolbar>
+
+  </ion-toolbar>
+</ion-footer>
+</ion-content>
